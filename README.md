@@ -14,7 +14,7 @@ Scikit-learn package
 6. Pre-processing   
   
 In particular, we explore:  
-* branching data sets into test and train subsets  
+* branching data sets into test and train subsets ![](https://github.com/FyzHsn/scikit-exploration/blob/master/Scikit_Script_Perceptron.py?raw=true) 
 * perceptron    
 * modeling class logictic regression (not related to regression analysis) allowing us to attach probability/confidence to prediction  
 * regularization to prevent overfitting of data  
