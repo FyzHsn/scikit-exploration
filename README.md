@@ -12,10 +12,12 @@ Scikit-learn package
 4. Dimensionality reduction    
 5. Model selection    
 6. Pre-processing   
+
+More information can be found on the sklearn [website](http://scikit-learn.org/stable/).  
   
 In particular, we explore:  
-* branching data sets into test and train subsets 
-* [perceptron](https://github.com/FyzHsn/scikit-exploration/blob/master/Scikit_Script_Perceptron.py)     
+* [branching data sets into test and train subsets](https://github.com/FyzHsn/scikit-exploration/blob/master/Scikit_Script_Perceptron.py)  
+* [perceptron](https://github.com/FyzHsn/scikit-exploration/blob/master/Scikit_Script_Perceptron.py)      
 * modeling class logictic regression (not related to regression analysis) allowing us to attach probability/confidence to prediction  
 * regularization to prevent overfitting of data  
 * maximum margin classification with support vector machines (SVM)    
