@@ -18,6 +18,7 @@ More information can be found on the sklearn [website](http://scikit-learn.org/s
 In particular, we explore:  
 * [branching data sets into test and train subsets](https://github.com/FyzHsn/scikit-exploration/blob/master/Scikit_Script_Perceptron.py)  
 * [perceptron](https://github.com/FyzHsn/scikit-exploration/blob/master/Scikit_Script_Perceptron.py)      
+![](https://github.com/FyzHsn/scikit-exploration/blob/master/Perceptron_Iris.png?raw=true)  
 * modeling class logictic regression (not related to regression analysis) allowing us to attach probability/confidence to prediction  
 * regularization to prevent overfitting of data  
 * maximum margin classification with support vector machines (SVM)    
