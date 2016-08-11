@@ -19,7 +19,7 @@ In particular, we explore:
 * [branching data sets into test and train subsets](https://github.com/FyzHsn/scikit-exploration/blob/master/Scikit_Script_Perceptron.py)  
 * [perceptron](https://github.com/FyzHsn/scikit-exploration/blob/master/Scikit_Script_Perceptron.py)      
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/Perceptron_Iris.png?raw=true)  
-* modeling class [logictic regression](https://github.com/FyzHsn/scikit-exploration/blob/master/Sckikit_Script_LogisticRegression.py) allowing us to attach probability/confidence to our predictions      
+* modeling class [logistic regression](https://github.com/FyzHsn/scikit-exploration/blob/master/Sckikit_Script_LogisticRegression.py) allowing us to attach probability/confidence to our predictions      
 * regularization to prevent overfitting of data  
 * maximum margin classification with support vector machines (SVM)    
 * dealing with nonlinearly separable case using slack variables and kernel SVM  
