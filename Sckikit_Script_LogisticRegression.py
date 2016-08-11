@@ -118,9 +118,19 @@ plt.xlabel('petal length [standardized]')
 plt.ylabel('petal width [standardized]')
 plt.legend(loc='upper left')
 plt.title('Logistic Regression - From Raschka\'s book')
-plt.savefig('LogisticRegression.png')
-plt.clf()                      
-#plt.show()
+#plt.savefig('LogisticRegression.png')
+#plt.clf()                      
+plt.show()
+
+# predict probability of class membership - needs to be reshaped if single row
+print(X_test_std[0, :])
+print(X_test_std[0, :].reshape(1, -1))
+print(np.around(lr.predict_proba(X_test_std[0, :].reshape(1, -1))*100,
+                decimals=3))
+
+# round array command - np.around(array, decimals=2)
+# predict class probability - .predict_proba()
+
 
 
 
