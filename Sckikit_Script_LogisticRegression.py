@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 In this script, I explore the modelling of discrete classes and their correspo-
-nding probabilities using the Logistic Regression  algorithm. Note that regres-
-sion in this case has nothing to do with regression analysis from statistics.
+nding probabilities using the Logistic Regression  algorithm. Note that this 
+algortihm is used for classification and not regression fitting.
 
 So far, we have seen the Heaviside (constant with jump discontinuity) and the 
 linear activation function. Logistic regression or logit uses a sigmoid functi-
@@ -31,3 +31,13 @@ phi_z = sigmoid(z)
 
 # plot of function
 plt.plot(z, phi_z)    
+plt.axvline(0.0, color = 'k')
+plt.axhspan(0.0, 1.0, facecolor='1.0', alpha=1.0, ls='dotted')
+plt.axhline(y=0.5, ls='dotted', color='k')
+plt.yticks([0.0, 0.5, 1.0])
+plt.ylim([-0.1, 1.1])
+plt.xlabel('z')
+plt.ylabel('$\phi (z)$')
+plt.title('Sigmoid Activation Function gives \n probability of classification')
+plt.savefig('SigmoidActivation.png')
+plt.clf()
