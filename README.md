@@ -23,7 +23,7 @@ In particular, we explore:
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/SigmoidActivation.png?raw=true)  
 Moreover, if one attaches a likelihood function that is to be maximized for the model to be probabilistically most correct, it is exactly equivalent to minimizing the cost function associated with the sigmoid activation function. The decision boundary from logistic regression is given below.    
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/LogisticRegression.png?raw=true)  
-* regularization to prevent overfitting of data  
+* regularization to prevent overfitting of data -  One can have a model that is not complex enough to fit the data and leads to poor classification. This is known as underfitting. On the other hand, it is also possible to have a model that is too complex for the underlying data. In this case, it won't work well for unseen data. Overfitting is easier to see in non-linearly separable data sets. Regularization (in our case L2) leads to a good compromise between the two extremes by tuning the complexity (C) parameter in the algorithms.  
 * maximum margin classification with support vector machines (SVM)    
 * dealing with nonlinearly separable case using slack variables and kernel SVM  
 * decision tree learning and maximizing  information gain  
