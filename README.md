@@ -20,8 +20,8 @@ In particular, we explore:
 * [perceptron](https://github.com/FyzHsn/scikit-exploration/blob/master/Scikit_Script_Perceptron.py)      
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/Perceptron_Iris.png?raw=true)  
 * modeling class [logistic regression](https://github.com/FyzHsn/scikit-exploration/blob/master/Sckikit_Script_LogisticRegression.py) allowing us to attach probability/confidence to our predictions. This is achieved by replacing the linear activation function in the Adaline Gradient Descent algorithm by the sigmoid function shown below.        
-![](https://github.com/FyzHsn/scikit-exploration/blob/master/SigmoidActivation.png?raw=true)
-Moreover, if one attaches a likelihood function that is to be maximized to be probabilistically more correct, it is exactly equivalent to minimizing the cost function associated with the sigmoid activation function.  
+![](https://github.com/FyzHsn/scikit-exploration/blob/master/SigmoidActivation.png?raw=true)  
+Moreover, if one attaches a likelihood function that is to be maximized for the model to be probabilistically most correct, it is exactly equivalent to minimizing the cost function associated with the sigmoid activation function.  
 * regularization to prevent overfitting of data  
 * maximum margin classification with support vector machines (SVM)    
 * dealing with nonlinearly separable case using slack variables and kernel SVM  
