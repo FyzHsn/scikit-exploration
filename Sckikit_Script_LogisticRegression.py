@@ -13,7 +13,6 @@ Moreover, mathematically, we see that maximizing the likelihood function leads
 to minimizing the cost function from the adaline algorithm.
 
 """
-
 # import libraries
 import matplotlib.pyplot as plt
 import numpy as np
@@ -99,7 +98,7 @@ def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
                     
         # highlight test data
         if test_idx:
-            X_test = X[test_idx, :]
+            X_test, y_test = X[test_idx, :], y[test_idx]
             plt.scatter(X_test[:, 0], X_test[:, 1], c='', alpha=1.0, 
                         linewidths=1, marker='o', s=55, label='test set')
 
@@ -150,7 +149,8 @@ plt.ylabel('weight coefficient')
 plt.xlabel('C')
 plt.legend(loc='upper left')
 plt.xscale('log')
-plt.savefig('weightcoeffcomplexity.png')
-plt.clf()   
+#plt.savefig('weightcoeffcomplexity.png')
+#plt.clf()   
+plt.show()
 
 
