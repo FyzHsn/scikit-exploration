@@ -29,9 +29,9 @@ Moreover, if one attaches a likelihood function that is to be maximized for the 
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/SVMC0p01.png?raw=true)  
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/SVMC1.png?raw=true)  
 * dealing with nonlinearly separable case using slack variables (Shown above) and kernel SVM. Non-linear cases can be dealth with using either slack variables in the SVM algorithm. This leads to a good compromise from overfitting. We tune the parameter C to get an appropriate fit for the Iris dataset. Next, consider the non-linearly separable data set and its corresponding decision boundary using a radial basis function (RBF) kernel in the SVM algorithm. scikit-learn, conveniently, has built in functions for this.    
-![]()  
+![](https://github.com/FyzHsn/scikit-exploration/blob/master/SVMNonlinearlySeparableData.png?raw=true)    
 Lastly, the RBF kernel uses another parameter gamma, which can be tuned in a way to lead to various degrees of fitting. For example,  
-![]()  
+![](https://github.com/FyzHsn/scikit-exploration/blob/master/NonlinearSVMIrisData.png?raw=true)    
 * decision tree learning and maximizing  information gain  
 * combining weak to strong learners via random forests  
 * K-nearest neighbors  
