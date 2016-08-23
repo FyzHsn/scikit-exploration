@@ -14,7 +14,6 @@ import numpy as np
 
 # function to plot decision boundaries predicted by algorithms
 from matplotlib.colors import ListedColormap  
-import matplotlib.pyplot as plt
 
 def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
     
@@ -106,10 +105,30 @@ plt.title('Linear SVM, C=1 - From Raschka\'s book \n Good compromise')
 plt.show()
 
 # SVM using a non-linear kernel
+# generate random data cluster
 np.random.seed(0)
 X_xor = np.random.randn(200, 2)
 y_xor = np.logical_xor(X_xor[:, 0] > 0, X_xor[:, 1] > 0)
 y_xor = np.where(y_xor, 1, -1)
+
+# plot clusters
+plt.scatter(X_xor[y_xor==1, 0], X_xor[y_xor==1, 1],
+            c='b', marker='x', label='1')
+plt.scatter(X_xor[y_xor==-1, 0], X_xor[y_xor==-1, 1],
+            c='r', marker='s', label='-1')
+plt.ylim(-3.0)
+plt.legend()
+plt.show()            
+
+# Apply SVM algorithm to the non-linearly separable data
+svm = SVC(kernel='rbf', random_state=0, gamma=0.1, C=10.0)
+svm.fit(X_xor, y_xor)
+plot_decision_regions(X_xor, y_xor, classifier=svm)
+plt.xlabel('X_xor[:, 0]')
+plt.ylabel('X_xor[:, 1]')
+plt.legend(loc='upper left')
+plt.title('Non-linear (RBF) SVM, gamma=0.1, C=10 \n From Raschka\'s book')
+plt.show()
 
 # SVM using a nonlinear RBF (radial basis function) kernel
 svm = SVC(kernel='rbf', random_state=0, gamma=100.0, C=1.0)
@@ -119,7 +138,7 @@ plot_decision_regions(X_combined_std, y_combined, classifier=svm,
 plt.xlabel('petal length [standardized]')
 plt.ylabel('petal width [standardized]')
 plt.legend(loc='upper left')
-plt.title('Non-linear (RBF) SVM, C=1 - From Raschka\'s book')
+plt.title('Non-linear (RBF) SVM, gamma=100, C=1 \n From Raschka\'s book')
 plt.show()
 
 # Play with gamma and C
