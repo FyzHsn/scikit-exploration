@@ -128,7 +128,9 @@ plt.xlabel('X_xor[:, 0]')
 plt.ylabel('X_xor[:, 1]')
 plt.legend(loc='upper left')
 plt.title('Non-linear (RBF) SVM, gamma=0.1, C=10 \n From Raschka\'s book')
-plt.show()
+plt.savefig('SVMNonlinearlySeparableData.png')
+plt.clf()
+#plt.show()
 
 # SVM using a nonlinear RBF (radial basis function) kernel
 svm = SVC(kernel='rbf', random_state=0, gamma=100.0, C=1.0)
@@ -139,6 +141,6 @@ plt.xlabel('petal length [standardized]')
 plt.ylabel('petal width [standardized]')
 plt.legend(loc='upper left')
 plt.title('Non-linear (RBF) SVM, gamma=100, C=1 \n From Raschka\'s book')
-plt.show()
-
-# Play with gamma and C
+plt.savefig('NonlinearSVMIrisData.png')
+plt.clf()
+#plt.show()
