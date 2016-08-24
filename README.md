@@ -32,6 +32,11 @@ Moreover, if one attaches a likelihood function that is to be maximized for the 
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/SVMNonlinearlySeparableData.png?raw=true)    
 Lastly, the RBF kernel uses another parameter gamma, which can be tuned in a way to lead to various degrees of fitting. For example,  
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/NonlinearSVMIrisData.png?raw=true)    
-* decision tree learning and maximizing  information gain  
+* decision tree learning and maximizing  information gain via measures of impurity. Decision tree learning is based on splitting up a parent dataset into various nodes and based on some measure of information gained (i.e. purity of class labels in the child datasets). Though this procedure can be continued until all the leaves are pure that might lead to overfitting. THerefore, a maximum depth of the decision tree is set. It is called pruning the tree. The information gain functions are based on measures of impurity or how mixed the class labels of the nodes are. The three major measures are entropy, Gini and classification error impurity. A comparison of the three measures is shown below for binary node splits.  
+![](https://github.com/FyzHsn/scikit-exploration/blob/master/ImpurityMeasures.png?raw=true)  
+Furthermore, the decision boundary regions using the built in scikit decision tree learning algorithms is shown below (maximum depth of 4):  
+![](https://github.com/FyzHsn/scikit-exploration/blob/master/DecisionTreeLearningIris.png?raw=true)  
+Lastly, ensembles of decision trees can be considered by combining weak learners (robust to parameter tuning) to strong learners (avoids overfitting) for n_estimators=10, n_jobs=2:  
+![](https://github.com/FyzHsn/scikit-exploration/blob/master/RandomForestIris.png?raw=true)  
 * combining weak to strong learners via random forests  
 * K-nearest neighbors  
