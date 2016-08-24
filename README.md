@@ -36,7 +36,8 @@ Lastly, the RBF kernel uses another parameter gamma, which can be tuned in a way
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/ImpurityMeasures.png?raw=true)  
 Furthermore, the decision boundary regions using the built in scikit decision tree learning algorithms is shown below (maximum depth of 4):  
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/DecisionTreeLearningIris.png?raw=true)  
-Lastly, ensembles of decision trees can be considered by combining weak learners (robust to parameter tuning) to strong learners (avoids overfitting) for n_estimators=10, n_jobs=2:  
+
+* combining weak to strong learners via random forests. Ensembles of decision trees can be considered by combining weak learners (robust to parameter tuning) to strong learners (avoids overfitting) for n_estimators=10, n_jobs=2:  
 ![](https://github.com/FyzHsn/scikit-exploration/blob/master/RandomForestIris.png?raw=true)  
-* combining weak to strong learners via random forests  
+n_estimators are the number of decision trees used.  
 * K-nearest neighbors  
