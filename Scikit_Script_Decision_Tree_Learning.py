@@ -147,5 +147,25 @@ plt.legend(loc='upper left')
 plt.savefig('RandomForestIris.png')
 plt.clf()
 #plt.show()                                
-      
+
+"""
+k-nearest neighbors - lazy learning algorithm
+Parametric models such as linear SVM, Perceptron estimate a fixed number of 
+parameters to describe the data.
+Non-parametric models such as decision tree learning and kernel SVM are descri-
+bed by parameters that grow with the data. Lazy learning is a special case with
+zero learning cost.
+
+"""
+from sklearn.neighbors import KNeighborsClassifier
+knn = KNeighborsClassifier(n_neighbors=5, p=2, metric='minkowski')
+knn.fit(X_train, y_train)
+plot_decision_regions(X_combined, y_combined,
+                      classifier=knn, test_idx=range(105, 150))
+plt.xlabel('petal length [standardized]')                      
+plt.ylabel('petal width [standardized]')
+plt.title('k-nearest neighbors on Iris dataset \n From Raschka\'s book')
+plt.savefig('knnIris.png')
+plt.clf()
+#plt.show()                      
 
